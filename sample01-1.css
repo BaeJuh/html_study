@@ -1,0 +1,121 @@
+* {
+    transition: 0.5s;
+}
+
+body {
+    margin: 0;
+}
+
+#layout01 {
+    border: 3px solid pink;
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    background: skyblue;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Gugi", sans-serif;
+}
+
+header:hover {
+    background: tomato;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: auto;
+    padding: 30px 0;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+
+nav li {
+    text-align: center;
+    flex-basis: 110px;
+}
+
+nav li:hover {
+    transform: scale(1.2);
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+#layout02 {
+    display: flex;
+}
+
+main {
+    flex: 2.5;
+}
+
+main section {
+    background: gold;
+    padding: 20px;
+}
+
+main section:hover {
+    transform: rotate(-10deg);
+}
+
+main article {
+    background: silver;
+    padding: 20px;
+}
+
+main article:hover {
+    transform: rotate(10deg);
+}
+
+section p {
+    font-family: "Gugi", sans-serif;
+}
+
+article p {
+    font-family: "Gugi", sans-serif;
+}
+
+aside {
+    background: yellow;
+    flex: 1;
+    padding: 20px;
+}
+
+aside:hover {
+    background: linear-gradient(tomato, yellow);
+}
+
+aside p {
+    font-family: "Gugi", sans-serif;
+}
+
+@media (max-width:550px) {
+    #layout02 {
+        flex-direction: column;
+    }
+    
+}
+
+
+.gugi-regular {
+    font-family: "Gugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.black-han-sans-regular {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
